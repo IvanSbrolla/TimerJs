@@ -2,5 +2,10 @@ const { series, parallel } = require('gulp');
 
 const { depJquery } = require('./gulpTasks/deps');
 const { appHtml, appJs, appCss } = require('./gulpTasks/app');
+const { servidor, monitorarArquivos } = require('./gulpTasks/server')
 
-module.exports.default = parallel(depJquery, appHtml,appJs,appCss)
+module.exports.default = series(
+    parallel(depJquery, appHtml, appJs, appCss),
+    servidor,
+    monitorarArquivos
+)

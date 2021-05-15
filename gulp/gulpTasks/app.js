@@ -9,7 +9,7 @@ const htmlMin = require('gulp-htmlmin')
 function appHtml() {
     return gulp.src('../build/**/*.html')
         .pipe(htmlMin({ collapseWhitespace: true }))
-        .pipe(gulp.dest('../root/html'))
+        .pipe(gulp.dest('../root'))
 }
 function appCss() {
     return gulp.src('../build/sass/index.scss')
