@@ -1,0 +1,30 @@
+{
+  "name": "TimerJs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanSbrolla/TimerJs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvanSbrolla/TimerJs/issues"
+  },
+  "homepage": "https://github.com/IvanSbrolla/TimerJs#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^1.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-strip-comments": "^2.5.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-uglifycss": "^1.1.0",
+    "jquery": "^3.6.0"
+  }
+}
