@@ -7,7 +7,7 @@ const concat = require('gulp-concat')
 const htmlMin = require('gulp-htmlmin')
 
 function appHtml() {
-    return gulp.src('../build/**/*.html')
+    return gulp.src('../build/html/*.html')
         .pipe(htmlMin({ collapseWhitespace: true }))
         .pipe(gulp.dest('../root'))
 }

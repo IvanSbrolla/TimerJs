@@ -4,7 +4,7 @@ const webserver = require('gulp-webserver');
 const watch = require('gulp-watch');
 const { appCss, appHtml, appJs } = require('./app')
 function servidor() {
-    return gulp.src('../root/html')
+    return gulp.src('../root')
         .pipe(webserver({
             port: 8080,
             open: true,
