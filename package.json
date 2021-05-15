@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/IvanSbrolla/TimerJs#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-dart-sass": "^1.0.2",

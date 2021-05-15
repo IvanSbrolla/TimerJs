@@ -1,11 +1,11 @@
 const { series, parallel } = require('gulp');
 
-const { depJquery } = require('./gulpTasks/deps');
+const { depJquery, depFontAwesomeCss, depFontAwesomeJs } = require('./gulpTasks/deps');
 const { appHtml, appJs, appCss } = require('./gulpTasks/app');
 const { servidor, monitorarArquivos } = require('./gulpTasks/server')
 
 module.exports.default = series(
-    parallel(depJquery, appHtml, appJs, appCss),
+    parallel(depJquery,depFontAwesomeJs,depFontAwesomeCss, appHtml, appJs, appCss),
     servidor,
     monitorarArquivos
 )
